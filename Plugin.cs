@@ -11,7 +11,7 @@ namespace BeatSaberVersionChecker {
     public string Name => "Version Checker";
     public string Version => "1.0";
     public string GithubAuthor => "artman41";
-    public string GithubProjName => "test";
+    public string GithubProjName => "BeatSaberVersionChecker";
 
     private IEnumerable<IVerCheckPlugin> Plugins => IllusionInjector.PluginManager.Plugins.Where(o => o is IVerCheckPlugin).Cast<IVerCheckPlugin>();
     private List<LatestPluginInfo> PluginInfos = new List<LatestPluginInfo>();
